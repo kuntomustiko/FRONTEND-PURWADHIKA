@@ -1,0 +1,42 @@
+/* SELECTOR */
+
+/* Semua tag H2 */
+/* 
+    h2 : selector
+    color : property
+    gold : value property
+*/
+h2 {
+    color: gold;
+}
+
+/* Semua tag P */
+p {
+    color: greenyellow;
+}
+
+/* ############ */
+/* #### ID #### */
+/* ############ */
+
+/* Semua tag yang memiliki id = danger */
+#danger {
+    color: red;
+}
+
+/* ############### */
+/* #### CLASS #### */
+/* ############### */
+.warning {
+    color: yellow;
+}
+
+
+/* ################### */
+/* #### ATTRIBUTE #### */
+/* ################### */
+
+/* Semua tag yang memiliki attribute 'name */
+[name] {
+    border: 2px solid plum;
+}
