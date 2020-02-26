@@ -40,3 +40,33 @@ p {
 [name] {
     border: 2px solid plum;
 }
+
+/* ####################### */
+/* #### OPTION COLORS #### */
+/* ####################### */
+
+#corn {
+    background-color: cornflowerblue;
+    border-width: 5px;
+    border-style: solid;
+    border-color: pink;
+}
+
+/* Red Green Blue : 0 - 255 */
+#rgb {
+    background-color: rgb(226, 170, 47);
+    border: 5px solid rgb(123, 125, 245);
+}
+
+/* Red Green Blue : 0 - 255 */
+/* Alpha : 0-1 */
+#rgba {
+    background-color: rgba(226, 119, 47, 0.342);
+    border: 5px solid rgba(123, 190, 245, 0.699);
+}
+
+/* Hex : 0 - 9 dilanjutkan a - f */
+#hex {
+    background-color: #deff82;
+    border: 5px solid #23f86a;
+}
