@@ -1,0 +1,1 @@
+// global state --> penyimpanan umum untuk beberapa / semua tampilan aplikasi
