@@ -2,14 +2,39 @@
 /* #### FONT #### */
 /* ############## */
 
-/* untuk tag paragraph yang memiliki id font */
+
+/* Untuk tag paragraph yang memiliki id font */
 p#font {
     color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* georgia, times, tnr : nama font */
+    /* serif atau sans-serif : jenis font */
+    /* tidak ada batasan list font */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-style: italic;
+    /* normal, oblique */
+    text-transform: none;
+    /* uppercase, lowercase none */
+    text-decoration: underline;
+    /* overline line-through none */
+    text-align: center;
+    /* left right */
+}
+
+p#google-font {
+    color: blueviolet;
+    /* font-family: 'Trade Winds'; */
+    font-family: 'Roboto Mono';
+    font-size: 30px;
+    text-align: center;
+    /* left right */
 }
 
 /* untuk semua id inside yang berada di dalam tag div */
-div #inside {}
-
-
+/* div #inside {} */
 /* oblique --> font reguler yang di paksa untuk miring (karena font nya tidak memiliki italic) */
+/* text-transform: capitalize --> untuk menjadikan setiap awalan kata menjadi huruf besar */
+/* text-transform: (uppercase, lowercase) */
+/* text-decoration: (underline(garis bawah), overline(garis atas), line-trough(garis tengah tercoret), none(tidak ada sama sekali)  */
+/* text-align: center; --> untuk posisi text di tengah */
+/* text-align: (left right) */

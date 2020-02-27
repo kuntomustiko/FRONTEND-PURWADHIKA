@@ -120,8 +120,8 @@ div.box-container div {
                                 dan jika gambar sudah di perkecil d tapi masih ada space lebih maka gambar asli akan di repeat untuk memenuhi ukuran space sisa nya  */
 
     /* background-size: cover; (500px) --> web browser akan berusaha menampilkan 1 gambar utuh untuk menutupi
-    element , sehingga jika rasio element (div) tidak sama dengan gambar 
-    maka gambar akan terpotong */
+                                        element , sehingga jika rasio element (div) tidak sama dengan gambar 
+                                        maka gambar akan terpotong */
 }
 
 .background-attachment {
