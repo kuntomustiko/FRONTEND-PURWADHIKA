@@ -101,3 +101,36 @@ div.box-container div {
     /* bawah kanan , bottom right */
     background-position: bottom right;
 }
+
+/* Hari ke-2 */
+
+.background-size {
+    background-image: url(./assets/pictures/Logo-Css-720x720.png);
+    /* jika hanya 1 buah px value --> maka ini untuk lebar dan tinggi */
+    /* jika hanya 2 buah px value --> maka ini nilai ke-1 untuk lebar dan nilai ke-2 untuk tinggi */
+
+    background-size: 500px 300px;
+
+    /* background-size: contain; (300px) --> web browser akan berusaha menampilkan 1 gambar utuh 
+                                    namun tetap mempertahankan rasio gambar, 
+                                    sehingga jika tidak 'pas' akan terdapat ruang sisa.
+                                    Yang ini akan di isi oleh gambar yang sama (repeat)
+                                --> jika gambar asli lebih besar dari tempat yang ingin ditempati maka,
+                                gambar asli akan menjadi kecil sesuai dengan ukuran tinggi/lebar tempat yang ingin ditempati
+                                dan jika gambar sudah di perkecil d tapi masih ada space lebih maka gambar asli akan di repeat untuk memenuhi ukuran space sisa nya  */
+
+    /* background-size: cover; (500px) --> web browser akan berusaha menampilkan 1 gambar utuh untuk menutupi
+    element , sehingga jika rasio element (div) tidak sama dengan gambar 
+    maka gambar akan terpotong */
+}
+
+.background-attachment {
+    background-image: url(./assets/pictures/logo-css-300x300.png);
+    background-attachment: fixed;
+    /*  */
+}
+
+.background-shorthand {
+    /* cara singkat menulis background */
+    background: aqua center center fixed url('./assets/pictures/logo-css-300x300.png');
+}

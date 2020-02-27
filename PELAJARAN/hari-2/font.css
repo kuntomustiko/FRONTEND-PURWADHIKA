@@ -1,0 +1,15 @@
+/* ############## */
+/* #### FONT #### */
+/* ############## */
+
+/* untuk tag paragraph yang memiliki id font */
+p#font {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* untuk semua id inside yang berada di dalam tag div */
+div #inside {}
+
+
+/* oblique --> font reguler yang di paksa untuk miring (karena font nya tidak memiliki italic) */
