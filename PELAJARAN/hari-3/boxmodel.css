@@ -43,11 +43,86 @@ div.width-height {
     padding-bottom: 10px;
 
     /* Shorthand padding
-
         - padding: 5px ; --> semua sisi akan memiliki 5px
         - padding: 5px 10px ; --> top & bottom 5px, left & right 10px
         - padding: 5px 10px 15px; --> top 5px, left & right 10px, bottom 15px
         - padding: 5px 10px 15px 20px; --> top 5px, right 10px bottom 15px left 20px
         */
-
 }
+
+/* Margin */
+/* 
+    Shorthand margin
+    - margin : 5px ; semua sisi akan memiliki 5px
+    - margin : 5px 10px; top & bottom 5px , left & right 10px
+    - margin : 5px 10px 15px ; top 5px, left / right 10px, bottom 15px
+    - margin : 5px 10px 15px 20px ;  top - right - bottom - left
+*/
+
+/* Untuk tag div yang memiliki id box-margin */
+div#box-margin {
+    margin: 30px 0;
+}
+
+/* 
+    Semua tag div yg ada didalam tag div (parent)
+    dimana div (parent) memiliki id : box-margin
+*/
+div#box-margin div {
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+/* 
+    Margin di sisi vertical (top & bottom)
+    margin collapse
+        Jika margin top dari suatu element bertemu dg margin bottom element lain
+        kedua margin tsb tidak akan dijumlahkan melainkan diambil yang paling besar
+*/
+div#marginA {
+    background-color: turquoise;
+    /* top 20px - left / right 30px - bottom 15px */
+    margin: 20px 30px 15px
+}
+
+
+div#marginB {
+    background-color: rgb(76, 100, 209);
+    margin-top: 30px;
+}
+
+div#marginC {
+    background-color: rgb(40, 167, 28);
+}
+
+/* Horizontal */
+
+div#margin1 {
+    background-color: violet;
+    display: inline-block;
+}
+
+div#margin2 {
+    background-color: rgb(206, 87, 97);
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+div#margin3 {
+    background-color: rgb(148, 85, 185);
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* 
+    Display :
+    Block
+    Inline
+    Inline Block
+    - Tag inline yang dapat diatur lebar dan tinggi
+*/
