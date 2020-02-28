@@ -1,0 +1,53 @@
+/* ################### */
+/* #### BOX MODEL #### */
+/* ################### */
+
+div.width-height {
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 300px;
+    font-size: 20px;
+
+    /* Line Height --> tinggi baris konten */
+    line-height: 300px;
+
+    /* text-align --> posisi text berdasarkan horizontal*/
+    text-align: center;
+
+    /* 
+        - width dan height --> hanya bisa di berikan pada block level element
+
+        - % --> tergantung dari lebar parent nya (akan menjadi lebih lebar atau kecil sesuai dengan lebar parent nya)
+
+        - em --> tergantung dari size font element itu sendiri
+            font-size: 20px;
+            width: 5em; --> 5 * 20 = 100px
+
+        - rem --> tergantung dari size font root element (font body) (html default font 16px)
+    */
+}
+
+/* untuk tag apapun yang memiliki class padding */
+.padding {
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 100px;
+
+    /* Penambahan padding memungkinkan akan mengubah ukuran dari element */
+    /* ukuran element - ukuran padding = ukuran value dari tag */
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+    /* Shorthand padding
+
+        - padding: 5px ; --> semua sisi akan memiliki 5px
+        - padding: 5px 10px ; --> top & bottom 5px, left & right 10px
+        - padding: 5px 10px 15px; --> top 5px, left & right 10px, bottom 15px
+        - padding: 5px 10px 15px 20px; --> top 5px, right 10px bottom 15px left 20px
+        */
+
+}

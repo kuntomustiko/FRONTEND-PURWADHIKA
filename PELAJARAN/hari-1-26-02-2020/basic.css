@@ -127,7 +127,7 @@ div.box-container div {
 .background-attachment {
     background-image: url(./assets/pictures/logo-css-300x300.png);
     background-attachment: fixed;
-    /*  */
+    /* untuk membuat gambar tetap berada di posisi walaupun web di scroll  */
 }
 
 .background-shorthand {
