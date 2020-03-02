@@ -28,7 +28,7 @@ div.container {
 .container {
     /* untuk arah element */
     /* flex-direction: row (default) || row-reverse || column || column-reverse; */
-    flex-direction: column;
+    flex-direction: row;
     /* row tinggi akan full dan kalau column lebar akan full */
 
     /* flex-wrap: nowrap (default , element akan ikut menyusut mengikut container jika di perkecil ) ||
@@ -64,4 +64,23 @@ div.container {
 
     /* align-content:flex-start flex-end center space-around space-between; */
     align-content: center;
+}
+
+/* FLEX ITEM PROPERTY*/
+/* ORDER : URUTAN */
+/* FLEX : LEBAR */
+
+#item-1 {
+    order: 3;
+    flex: 2;
+}
+
+#item-2 {
+    order: 1;
+    flex: 1;
+}
+
+#item-3 {
+    order: 2;
+    flex: 1;
 }
