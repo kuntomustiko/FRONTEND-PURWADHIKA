@@ -1,0 +1,67 @@
+/* ketika ingin membuat element html sejajar 1 baris bisa gunakan display:flex */
+div.container {
+    display: flex;
+    width: 80%;
+    height: 400px;
+    /* 
+    top and bottom --> 0
+    left and right --> auto (sisa dari ruang yang ada akan dibagi sama rata untuk kanan dan kiri)
+     */
+    margin: 0 auto;
+    background-color: thistle;
+}
+
+.container div {
+    border: 1px solid red;
+    background-color: aqua;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 25%;
+    height: 20%;
+}
+
+/* Flex Container */
+/* property yang hanya dimiliki oleh container */
+/* flex-direction || flex-wrap || flex-flow */
+.container {
+    /* untuk arah element */
+    /* flex-direction: row (default) || row-reverse || column || column-reverse; */
+    flex-direction: column;
+    /* row tinggi akan full dan kalau column lebar akan full */
+
+    /* flex-wrap: nowrap (default , element akan ikut menyusut mengikut container jika di perkecil ) ||
+                wrap (mempertahankan bentuk dan akan turun ke bawah jika container diperkecil) ||
+                wrap-reverse; */
+    flex-wrap: wrap;
+
+    /* flex-flox (shorthand) */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    /* flex-flow:  row wrap; */
+}
+
+/* justify-content || align-content */
+.container {
+
+    /* 
+    ROW:
+        - Horizontal : justify-content
+        - Vertical : align-content
+    Column:
+        - Horizontal : align-content
+        - Vertical : justify-content
+    */
+
+    /* justify dan align posisi nya akan tergantung dengan flex-direction: row atau column */
+    /* justify-content: flex-start || flex-end || center 
+        || space-around ( margin antara flex-item akan lebih lebar dibanding margin antara flex-item dengan border content)
+        || space-between (margin hany ada di anatara flex-item)
+        || space-evenly (margin anatara flex-item dan margin flex-item dengan border ; */
+    justify-content: space-evenly;
+
+
+    /* align-content:flex-start flex-end center space-around space-between; */
+    align-content: center;
+}
