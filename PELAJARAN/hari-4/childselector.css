@@ -1,0 +1,41 @@
+/* ############### */
+/* CHILD SELECTOR */
+/* ############### */
+
+/* Semua tag image yang merupakan child dari div */
+div>img {
+    border: 1px solid black;
+}
+
+/* 
+    Tag image yang merupakan child dari paragraph
+    dimana paragraph merukapan child dari div
+*/
+div>p>img {}
+
+
+input#hello {
+    width: 140px;
+    height: 40px;
+    color: white;
+    background-color: rgb(56, 134, 165);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Jika mouse diarahkan ke tag input dengan id hello */
+input#hello:hover {
+    color: rgb(56, 134, 165);
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* Jika tag input dengan id hello di klik */
+input#hello:active {
+    width: 120px;
+    height: 30px;
+    color: white;
+    background-color: rgb(131, 12, 211);
+    font-size: 15px;
+    font-weight: normal;
+}
