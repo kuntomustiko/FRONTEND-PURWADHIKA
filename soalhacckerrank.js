@@ -110,23 +110,49 @@
 
 // miniMaxSum(arr)
 
-// Complete the birthdayCakeCandles function below.
-function birthdayCakeCandles(ar) {
+// // Complete the birthdayCakeCandles function below.
+// function birthdayCakeCandles(ar) {
 
-    var sumSame = 0
-    var maxmax = Math.max.apply(null, ar)
+//     var sumSame = 0
+//     var maxmax = Math.max.apply(null, ar)
 
-    for (let index = 0; index < ar.length; index++) {
-        if (ar[index] == maxmax) {
-            sumSame++
-        }
-    }
-    console.log(typeof (sumSame));
-    console.log(sumSame);
+//     for (let index = 0; index < ar.length; index++) {
+//         if (ar[index] == maxmax) {
+//             sumSame++
+//         }
+//     }
+//     console.log(typeof (sumSame));
+//     console.log(sumSame);
 
-}
+// }
 
 // var ar = [3, 2, 1, 3, 2, 2]
-var ar = [3, 2, 1, 3]
+// var ar = [3, 2, 1, 3]
 
-birthdayCakeCandles(ar)
+// birthdayCakeCandles(ar)
+
+
+// function bonAppetit(bill, k, b) {
+
+//     var diambil = bill[k]
+//     var totalArray = 0
+//     var pengurangB = b
+//     var totalPengurang = 0
+//     for (let index = 0; index < bill.length; index++) {
+//         if (bill[index] != diambil) {
+//             totalArray += bill[index]
+//         }
+//     }
+//     var bagi = totalArray / 2
+//     if (bagi == pengurangB) {
+//         console.log("Bon Appetit");
+//     } else {
+//         totalPengurang = pengurangB - bagi
+//         console.log(totalPengurang);
+//     }
+
+// }
+
+// var bill = [3, 10, 2, 9]
+// bonAppetit(bill, 1, 7)
+// console.log(bonAppetit(bill, 1, 12));
