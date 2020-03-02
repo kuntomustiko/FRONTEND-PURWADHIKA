@@ -1,0 +1,40 @@
+/* MEDIA QUERY */
+div.media {
+    font-size: 20px;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: violet;
+    line-height: 500px;
+    font-weight: bold;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* 700px lebar dari browser */
+@media(min-width:700px) {
+    div.media {
+        background-color: red;
+        color: white;
+        border: 5px solid black;
+        font-size: 30px;
+    }
+}
+
+@media(min-width:800px) {
+    div.media {
+        background-color: rgb(83, 255, 4);
+        color: white;
+        border: 5px solid black;
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 540px) {
+
+    /* handphone */
+    div.media {
+        background-color: black;
+        color: black;
+    }
+}
