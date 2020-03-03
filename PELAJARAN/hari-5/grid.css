@@ -10,13 +10,18 @@ h1 {
     padding: 0;
 }
 
+h1.head {
+    text-align: center;
+    margin: 20px;
+}
+
 .first-container {
     display: grid;
     width: 90%;
     margin: 0 auto;
     /* vh = view height / view dari tinggi browser yang bisa di view / tempat untuk menampilkan isi browser */
     /* vh walauapun tinggi browser di kecilkan maka akan tetap ukuran nya */
-    height: 100vh;
+    /* height: 100vh; */
 
 }
 
@@ -25,7 +30,6 @@ h1 {
     color: white;
     padding: 10px;
     font-size: 20px;
-
 }
 
 /* 
@@ -47,14 +51,19 @@ h1 {
     /* ulangi sebanyak 3 dengan lebar 30% */
     /* grid-template-columns: repeat(3, 30%); */
     /* 1fr = 1 bagian, jadi lebar di bagi menjadi beberapa fr*/
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
 
     /* Mengatur tinggi dari setiap grid / baris */
-    /* grid-template-rows: 100px 300px 200px; */
+    /*untuk baris pertama saja*/
+    grid-template-rows: 100px;
+    /* grid-template-rows: 100px 300px 200px; untuk baris pertama kedua ketiga */
     /* jika ingin menggunakan % persen maka harus memiliki tinggi dahulu */
     /* grid-template-rows: 10% 60% 20%; */
     /* grid-template-rows: 1fr 3fr 2fr; */
-    grid-template-rows: repeat(3, 33.3%);
+    /* grid-template-rows: repeat(3, 33.3%); */
+
+    /* Menentukan tinggi semua baris yang belum di definisikan */
+    grid-auto-rows: 150px;
 
     /* margin antar kolom */
     column-gap: 20px;
@@ -62,5 +71,28 @@ h1 {
     /* margin antar baris */
     row-gap: 15px;
 
-    gap: 10px 25px;
+    /* short hand : row-gap column-gap */
+    /* gap: 10px 25px; */
 }
+
+.item-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+
+    /* short hand di atas menjadi di bawah ini */
+    grid-row: 1/3;
+}
+
+.item-5 {
+    grid-column: 1/3;
+}
+
+.item-6 {
+    grid-row: 2/4;
+    grid-column: 3/4;
+}
+
+/* JUSTIFY & ALIGN CONTENT */
