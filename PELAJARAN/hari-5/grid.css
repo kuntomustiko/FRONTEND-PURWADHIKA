@@ -96,3 +96,23 @@ h1.head {
 }
 
 /* JUSTIFY & ALIGN CONTENT */
+.second-container {
+    display: grid;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    margin-bottom: 100px;
+
+    grid-template-columns: 180px 350px 180px;
+    grid-auto-rows: 80px;
+    gap: 10px;
+
+    /* justify-content selalu untuk HORIZONTAL */
+    /* justify-content: start || end || center || space-around || space-between || space-evenly */
+    justify-content: space-evenly;
+
+    /* align-content selalu untuk VERTICAL */
+    /* align-content: start || end || center || space-around || space-between || space-evenly */
+    align-content: space-around;
+}
