@@ -38,52 +38,6 @@ h1 {
 /* #### FEATURE #### */
 /* ################# */
 
-/* #feature-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 20px auto;
-    width: 80%;
-    height: 600px;
-    font-size: 22px;
-}
-
-#feature-container div {
-    height: 28%;
-    color: white;
-    padding: 10px;
-}
-
-#feature-1 {
-    background-color: antiquewhite;
-    color: black;
-}
-
-#feature-2 {
-    background-color: red;
-    color: black;
-
-}
-
-#feature-3 {
-    background-color: rgb(25, 139, 124);
-    color: black;
-}
-
-@media(max-width:1500px) {
-    #feature-container {
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    #feature-container div {
-        width: 25%;
-        height: 50%;
-        text-align: center;
-        padding: 10px;
-    }
-} */
-
 #feature-container {
     display: flex;
     margin: 20px auto;
