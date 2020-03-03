@@ -1,0 +1,66 @@
+/* Mengatur LEBAR, TINGGI, POSISI ELEMENT Secara 2 DIMENSI */
+
+h1 {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.first-container {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    /* vh = view height / view dari tinggi browser yang bisa di view / tempat untuk menampilkan isi browser */
+    /* vh walauapun tinggi browser di kecilkan maka akan tetap ukuran nya */
+    height: 100vh;
+
+}
+
+.item {
+    background-color: aqua;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+/* 
+    tag apapun yang memiliki class 'item'
+    dimana mereka merupakan sebuah child
+    dan mereka merupakan child dengan urutan angka genap (2 , 4, 6, 8, dst 
+*/
+.item:nth-child(even) {
+    background-color: deeppink;
+}
+
+/* CONTAINER PROPERTY */
+.first-container {
+    /* Menentukan banyak kolom dan Mengatur Lebar setiap item */
+    /* 3 kolom = kolom ke-1 100px kolom ke-2 400px kolom ke-3 300px */
+    /* jika menggunakan px maka tidak akan responsif, jika mau responsif maka gunakan % persen / fr */
+    /* grid-template-columns: 300px 400px 300px; */
+    /* grid-template-columns: 30% 30% 30%; */
+    /* ulangi sebanyak 3 dengan lebar 30% */
+    /* grid-template-columns: repeat(3, 30%); */
+    /* 1fr = 1 bagian, jadi lebar di bagi menjadi beberapa fr*/
+    grid-template-columns: 1fr 2fr 1fr;
+
+    /* Mengatur tinggi dari setiap grid / baris */
+    /* grid-template-rows: 100px 300px 200px; */
+    /* jika ingin menggunakan % persen maka harus memiliki tinggi dahulu */
+    /* grid-template-rows: 10% 60% 20%; */
+    /* grid-template-rows: 1fr 3fr 2fr; */
+    grid-template-rows: repeat(3, 33.3%);
+
+    /* margin antar kolom */
+    column-gap: 20px;
+
+    /* margin antar baris */
+    row-gap: 15px;
+
+    gap: 10px 25px;
+}

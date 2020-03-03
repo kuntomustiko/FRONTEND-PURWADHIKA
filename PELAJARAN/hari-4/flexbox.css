@@ -65,7 +65,7 @@ div.container {
     /* align-content:flex-start || flex-end || center || space-around || space-between; */
     align-content: center;
 
-    /* box-sizing: border-box; --> jika di tambah padding maka ukuran asli akan berkurang dan element akan sebesar ukuran asli dengan tambahan padding  */
+    /* box-sizing: border-box; --> jika di tambah padding maka ukuran asli akan berkurang dan element akan tetap sebesar ukuran asli dengan tambahan padding  */
     /* box-sizing: content-box; --> jika di tambah padding maka ukuran asli tidak berubah dan element akan bertambah lebih besar dengan padding  */
 }
 
