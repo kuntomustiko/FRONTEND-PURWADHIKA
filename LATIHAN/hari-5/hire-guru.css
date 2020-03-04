@@ -1,0 +1,166 @@
+/* 
+ 1. grid-template-areas (mengatur posisi element)
+ 2. background-color: linear-gradient
+ 3. border-radius (agar bingkai foto lingkaran)
+ 4. text-decoration (menghilangkan style default anchor tag)
+ 5. transition (agar pindah style tidak dalam sekejap)
+ 6. box-shadow (efek bayangan berwarna, ketika tombol 'naik')
+ 7. transform (untuk menggese tombol ke atas dan ke bawah)
+ 8. font-awesome 5 (logo social media)
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+}
+
+.container {
+    font-size: 1.5em;
+    display: grid;
+
+    grid-template-areas:
+        "navbar"
+    ;
+
+    grid-template-rows: 130px 800px 200px;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-image: linear-gradient(to right,
+            rgb(7, 211, 201),
+            rgb(56, 235, 101),
+            rgb(179, 238, 69));
+}
+
+.inside-navbar {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+nav li {
+    /* Menghilangkan default style dari li : titik hitam */
+    list-style: none;
+    /* atas bawah : 1 kali besar font, kanan kiri : 0 */
+    padding: 1em 0;
+
+}
+
+nav li a {
+    color: white;
+    font-weight: 700;
+    /* Menghilang default style dari tag anchor , underscore */
+    text-decoration: none;
+    /* tranparansi : 0 - 1 , 0 hilang, 1 full */
+    opacity: 0.7;
+
+    /* waktu transisi dari transparan menuju normal */
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    opacity: 1;
+}
+
+.hero {
+    /* lebar maksimal, tidak akan terus melebar ketika parent bertambar lebar */
+    max-width: 960px;
+    margin: 15px auto;
+    text-align: center;
+    color: rgb(124, 124, 124)
+}
+
+.content {
+    background-image: url('./pictures/black-background.jpg');
+}
+
+.hero img {
+    width: 200px;
+    border-radius: 100px;
+}
+
+.hero h1 {
+    font-size: 2em;
+    font-weight: 300;
+    color: rgb(190, 190, 190);
+}
+
+.hero p {
+    line-height: 1.8em;
+}
+
+.btn {
+    /* Agar memiliki margin */
+    display: inline-block;
+    /* Menghilangkan underscore default dari tag anchor */
+    text-decoration: none;
+    font-weight: 700;
+    background-color: rgb(204, 34, 139);
+    color: white;
+    padding: 12px 48px;
+    border-radius: 40px;
+    margin-top: 30px;
+    transition: .3s;
+    /* 0.3 */
+}
+
+.btn:hover {
+    /* 3px lebih ke atas dari posisi asli */
+    transform: translateY(-3px);
+
+    /* efek warna dibawahnya */
+    /* offset-x offset-y blur color */
+    box-shadow: 0px 20px 30px rgb(133, 59, 182);
+}
+
+/* ketika di click */
+.btn:active {
+    /* 1px lebih ke atas dari posisi asli */
+    transform: translateY(-1px);
+
+    /* efek warna dibawahnya */
+    /* offset-x offset-y blur color */
+    box-shadow: 0px 20px 30px rgb(211, 48, 135);
+}
+
+
+footer ul {
+    max-width: 640px;
+    margin: 48px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+footer ul li {
+    list-style: none;
+    font-size: 50px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: grey;
+    transition: 0.5;
+}
+
+footer li a:hover {
+    color: #3b3b3b;
+}
+
+footer p {
+    font-size: 20px;
+}

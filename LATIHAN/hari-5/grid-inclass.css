@@ -4,16 +4,6 @@
     padding: 0;
 }
 
-.item {
-    background-color: aqua;
-    color: white;
-    font-size: 20px;
-}
-
-.item:first-child,
-.item:last-child {
-    background-color: rgb(16, 16, 156);
-}
 
 .container {
     display: grid;
@@ -23,6 +13,17 @@
     grid-template-columns: 1fr 2fr;
     grid-auto-rows: 150px;
     gap: 10px 10px;
+}
+
+.item {
+    background-color: aqua;
+    color: white;
+    font-size: 30px;
+}
+
+.item:first-child,
+.item:last-child {
+    background-color: rgb(16, 16, 156);
 }
 
 .side {
@@ -50,7 +51,6 @@
 
 .side-1 {
     background-color: rgb(44, 195, 255);
-
 }
 
 .side-2 {
