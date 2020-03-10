@@ -1,0 +1,12 @@
+state
+    - Data yang disimpan didalam komponen
+
+property
+    - Data yang dikirim dari luar komponen
+    - Property dapat berupa A P A P U N (array, int, string, dll)
+    - Tidak ada batasa jumlah property
+
+this.setState()
+    - Digunakan untuk meng-update 'state' object pada komponen
+    - Dapat mengupdate sebagian property dari state (tidak harus semua di update bersamaan)
+    - Setiap selesai update akan running function 'render'
