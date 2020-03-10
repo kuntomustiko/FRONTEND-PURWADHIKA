@@ -1,14 +1,26 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class ImageList extends Component {
+let ImageList = (props) => {
 
-    render() {
+    // props.images = [{ alt_description, description, urls }, { alt_description, description, urls }]
+    // image =  {alt_description, description, urls }
+    let results = props.images.map((image) => {
         return (
-            <div>
-                <h1>Image List Compomponent</h1>
-            </div>
+            <img
+                className="card"
+                src={image.urls.regular}
+                key={image.id}
+                alt={image.alt_description} />
         )
-    }
+    })
+    return (
+        <div className="card-columns">
+            {results}
+        </div>
+    )
 }
 
 export default ImageList
+
+// this.props.images
+// [0].urls.regular
