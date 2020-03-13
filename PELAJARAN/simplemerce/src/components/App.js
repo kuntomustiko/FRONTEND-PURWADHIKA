@@ -13,8 +13,9 @@ class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                <div>
+                <div >
                     <Header />
+                    {/* exact = membuat agar tidak selalu muncul ketika page lain di klik */}
                     <Route path="/" exact component={Home} />
                     <Route path="/register" component={Register} />
                     <Route path="/login" component={Login} />
