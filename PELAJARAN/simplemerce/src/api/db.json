@@ -1,3 +1,46 @@
 {
-    "users": []
+  "users": [
+    {
+      "username": "username",
+      "email": "email",
+      "password": "password",
+      "id": 1
+    },
+    {
+      "username": "admin",
+      "email": "admin",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "username": "username",
+      "email": "email",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "username": "username",
+      "email": "eeeeee",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "username": "sasas",
+      "email": "admin",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "username": "username",
+      "email": "admin",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "username": "adminah",
+      "email": "username",
+      "password": "123",
+      "id": 7
+    }
+  ]
 }
