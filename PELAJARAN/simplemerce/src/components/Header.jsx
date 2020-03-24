@@ -19,6 +19,8 @@ import {
     NavbarText
 } from 'reactstrap';
 
+import { connect } from 'react-redux'
+
 class Header extends Component {
 
     state = {
@@ -34,13 +36,30 @@ class Header extends Component {
                     <NavbarBrand tag={Link} to="/">reactstrap</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="mr-auto" navbar>
+                        <Nav className="ml-auto" navbar>
                             <NavItem>
                                 <NavLink tag={Link} to="/register">Register</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink tag={Link} to="/login">Login</NavLink>
                             </NavItem>
+                            <UncontrolledDropdown nav inNavbar>
+                                <DropdownToggle nav caret>
+                                    Hello, {this.props.uname}
+                                </DropdownToggle>
+                                <DropdownMenu right>
+                                    <DropdownItem>
+                                        Option 1
+                                    </DropdownItem>
+                                    <DropdownItem>
+                                        Option 2
+                                    </DropdownItem>
+                                    <DropdownItem divider />
+                                    <DropdownItem>
+                                        Reset
+                                    </DropdownItem>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
                         </Nav>
                     </Collapse>
                 </Navbar>
@@ -49,7 +68,12 @@ class Header extends Component {
     }
 }
 
-export default Header
+let mapStateToProps = (state) => {
+    return {
+        uname: state.auth.username
+    }
+}
+export default connect(mapStateToProps)(Header)
 
 
 
