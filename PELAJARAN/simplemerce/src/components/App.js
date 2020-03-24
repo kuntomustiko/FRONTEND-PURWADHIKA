@@ -4,6 +4,7 @@ import React, {
 import { Route, BrowserRouter } from 'react-router-dom'
 
 // Components
+// tanpa {} karena di export menggunakan kata default
 import Header from './Header'
 import Home from './Home'
 import Register from './Register'

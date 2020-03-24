@@ -3,6 +3,8 @@ import React, {
 } from 'react'
 
 import axios from 'axios'
+import { onLoginUser } from '../actions/index'
+import { connect } from 'react-redux'
 
 class Login extends Component {
 
@@ -15,9 +17,14 @@ class Login extends Component {
         let data = { username: _username, password: _password }
         axios.get(link, { params: data }).then((res) => {
             if (res.data.length > 0) {
-                alert('user ditemukan')
+                // res.data[0] = {id: 1, username: 'kunto', password: 'satuduatiga'}
+                // user ditemukan : simpan info user ke redux
+                // ketika action creator maka gunakan this seperti ini
+                this.props.onLoginUser(res.data[0])
             } else {
-                alert('user tidak ditemukan')
+                // muncul notif jika data user tidak ditemukan : munculkan notif
+                // username salah / password salah
+                alert('username or password is incorrect')
             }
         })
     }
@@ -53,4 +60,5 @@ class Login extends Component {
     }
 }
 
-export default Login
+// export default connect(KIRI, KANAN)(Login)
+export default connect(null, { onLoginUser })(Login)
