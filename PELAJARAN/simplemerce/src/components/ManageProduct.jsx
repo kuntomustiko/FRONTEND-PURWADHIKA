@@ -9,6 +9,7 @@ class ManageProduct extends Component {
 
 
     // akan dirunning 1x dan di running setelah render
+    // ketika buka halaman langsung ada datanya (tanpa harus di tekan tombol atau event apapun) maka gunakan function ini
     componentDidMount() {
 
         axios.get(
@@ -21,9 +22,24 @@ class ManageProduct extends Component {
 
     // Tugas hari sabtu : Render Map
     renderList = () => {
-        return this.state.products.map(
-            // Lanjutkan disni
-        )
+        // this.state.products = [ {}, {}, {} ]
+        // product = {id, name, desc, price, src}
+        return this.state.products.map((product) => {
+            return (
+                <tr>
+                    <td>{product.id}</td>
+                    <td>{product.name}</td>
+                    <td>{product.desc}</td>
+                    <td>{product.price}</td>
+                    {/* <td><img width="50" src={product.src} alt=""/></td> */}
+                    <td><img width="50" src={product.src} alt="" /></td>
+                    <td>
+                        <button className="btn btn-outline-primary btn-block btn-sm" >Edit</button>
+                        <button className="btn btn-outline-danger btn-block btn-sm" >Delete</button>
+                    </td>
+                </tr>
+            )
+        })
     }
 
     render() {
@@ -34,9 +50,11 @@ class ManageProduct extends Component {
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">NAME</th>
+                            <th scope="col">DESC</th>
+                            <th scope="col">PRICE</th>
+                            <th scope="col">PICTURE</th>
+                            <th scope="col">ACTION</th>
                         </tr>
                     </thead>
                     <tbody>
