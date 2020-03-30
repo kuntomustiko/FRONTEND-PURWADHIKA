@@ -14,33 +14,46 @@
     },
     {
       "username": "username",
-      "email": "email",
-      "password": "1234",
-      "id": 3
-    },
-    {
-      "username": "username",
       "email": "eeeeee",
       "password": "123",
       "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Hoodie Supreme",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 135000,
+      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png"
     },
     {
-      "username": "sasas",
-      "email": "admin",
-      "password": "123",
-      "id": 5
+      "id": 2,
+      "name": "Sepatu Piero",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 150000,
+      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png"
     },
     {
-      "username": "username",
-      "email": "admin",
-      "password": "123",
-      "id": 6
+      "id": 3,
+      "name": "Sandals Swelow",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 235000,
+      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png"
     },
     {
-      "username": "adminah",
-      "email": "username",
-      "password": "123",
-      "id": 7
+      "id": 4,
+      "name": "T-Shirt O Neck",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 178000,
+      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png"
+    },
+    {
+      "id": 5,
+      "name": "T-Shirt V Neck",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 179000,
+      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png"
     }
   ]
 }

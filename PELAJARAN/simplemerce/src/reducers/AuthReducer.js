@@ -22,20 +22,20 @@ action = {
 }
 */
 
+// menentukan nilai awal ketika aplikasi pertama kali dijalankan / setiap buka app
 let init = {
     id: "",
     username: ""
 }
 
-
-
+// redux agar kita dapat mentransfer data komponen ke komponen lainnya
+// redux akan hilang ketika di restart
 export default (state = init, action) => {
     switch (action.type) {
         case 'LOGIN_SUCCESS':
             return { ...state, id: action.payload.id, username: action.payload.username }
-            break;
         case 'LOGOUT_SUCCESS':
-            break;
+            return { ...state, id: "", username: "" }
         default: // pilihan terakhir
             return state;
     }
